@@ -7,12 +7,155 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>CodersCamp | Projekt 1 - HTML i CSS</title>
     <meta name="description" content="CodersCamp to darmowy, otwarty kurs programowania webowego we Wrocławiu. Sprawdź, czego nauczysz się na CodersCamp i spróbuj swoich sił w branży IT!">
-
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Font link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/b2745da9e3.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
-<p>CodersCamp - projekt 1. Tutaj możesz zacząć swoją zabawę!</p>
-<p>TEST commit</p>
+    <header class="header">
+        <div class="header__inner">
+            <h1 class="header__title title">Chrobok</h1>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#about">About.me</a></li>
+                    <li class="nav__item"><a href="#skills">Skills.bar</a></li>
+                    <li class="nav__item"><a href="#project">Project.file</a></li>
+                    <li class="nav__item"><a href="#contact">Contact.form</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <section class="welcome">
+                <div class="welcome__inner">
+                    <img src="./img/logo.png" alt="Logo images" class="welcome__img">
+                    <div class="welcome__arrow">
+                        <a href="#about" class="welcome__link">
+                            HELLO
+                            <i class="fas fa-angle-double-down"></i>
+                            WORLD
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="about super-box" id='about'>
+                <h2 class="about__title title">About.me</h2>
+                <div class="about__inner">
+                    <div class="about__left">
+                        <h3 class="about__subtitle">My name is 'Karol'</h3>
+                        <p class="about__info">Experience: <span>0.5 year</span></p>
+                        <p class="about__info">Profession: <span>Webdeveloper</span></p>
+                        <p class="about__info">Level: <span>Junior</span></p>
+                        <p class="about__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti velit fugit incidunt ipsa, architecto fugiat. Dignissimos amet, ipsam incidunt quia tenetur nam, quidem ducimus voluptas animi, magnam quod nesciunt molestias.
+                        </p>
+                    </div>
+                    <div class="about__right">
+                        <img src="img/author.png" alt="Author photo" class="about__img">
+                    </div>
+                </div>
+            </section>
+            <section class="skills super-box" id='skills'>
+                <h2 class="skills__title title">Skills.bar</h2>
+                <article class="skills__box">
+                    <h3 class="skills__name">HTML - 90%</h3>
+                    <div class="skills__bar"><span class="skills__progress html"></span></div>
+                </article>
+                <article class="skills__box">
+                    <h3 class="skills__name">CSS - 65%</h3>
+                    <div class="skills__bar"><span class="skills__progress css"></span></div>
+                </article>
+                <article class="skills__box">
+                    <h3 class="skills__name">SASS - 60%</h3>
+                    <div class="skills__bar"><span class="skills__progress sass"></span></div>
+                </article>
+                <article class="skills__box">
+                    <h3 class="skills__name">JS - 50%</h3>
+                    <div class="skills__bar"><span class="skills__progress js"></span></div>
+                </article>
+                <article class="skills__box">
+                    <h3 class="skills__name">GIT - 70%</h3>
+                    <div class="skills__bar"><span class="skills__progress git"></span></div>
+                </article>
+            </section>
+            <section class="project super-box" id="project">
+                <h2 class="project__title title">Project.file</h2>
+                <div class="project__inner">
+                    <a href="https://bezuzyteczna.pl/" target="_blank" class="project__link">
+                        <article class="project__box">
+                            <h3 class="project__name">Bezuzyteczna</h3>
+                            <img src="img/bez.png" alt="Bezuzyteczna image" class="project__img">
+                        </article>
+                    </a>
+                    <a href="https://www.czabanski-galuszynski.com/" target="_blank" class="project__link">
+                        <article class="project__box">
+                            <h3 class="project__name">C & G</h3>
+                            <div class="project__img">
+                                <img src="img/cig.png" alt="C&G image">
+                            </div>
+                        </article>
+                    </a>
+                    <a href="https://www.thalgo.pl/" target="_blank" class="project__link">
+                        <article class="project__box">
+                            <h3 class="project__name">Thalgo</h3>
+                            <div class="project__img">
+                                <img src="img/thalgo.png" alt="Thalgo image">
+                            </div>
+                        </article>
+                    </a>
+                    <a href="https://www.akson.pl/" target="_blank" class="project__link">
+                        <article class="project__box">
+                            <h3 class="project__name">Akson</h3>
+                            <div class="project__img">
+                                <img src="img/akson.png" alt="Akson image">
+                            </div>
+                        </article>
+                    </a>
+                </div>
+            </section>
+            <section class="contact super-box" id="contact">
+                <h2 class="contact__title title">Contact.form</h2>
+                <form action='#' class="form">
+                    <div class="form__flex">
+                        <div class="form__item form__item-small">
+                            <label for="name" class="form__label">Your name:</label>
+                            <input type="text" id="name" class="form__input">
+                        </div>
+                        <div class="form__item form__item-small">
+                            <label for="email" class="form__label">Your email:</label>
+                            <input type="email" id="email" class="form__input">
+                        </div>
+                    </div>
+                    <div class="form__item">
+                        <label for="message" class="form__label">Your message:</label>
+                        <textarea id="message" class="form__input form__textarea" cols="30" rows="5"></textarea>
+                    </div>
+                    <div class="form__last">
+                        <button type="submit" class="form__btn">Enter<i class="fas fa-chevron-circle-right"></i></button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__left">
+                    <h1 class="footer__title">Chrobok</h1>
+                </div>
+                <div class="footer__right">
+                    <p class="footer__arr">
+                        ©Karol Chrobok. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,54 @@
+body {
+    color: $font-color;
+    font-size: 14px;
+    font-family: 'JetBrains Mono', monospace;
+    background-color: $background-color;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+.main {
+    background-color: $background-color;
+}
+
+.title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.super-box {
+    margin: 1rem 0;
+    border-top: 1px solid $font-color;
+    padding: 1rem 0;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@include mq($screen-lg) {
+    .container {
+        max-width: 900px;
+    }
+}
+
+@include mq($screen-md) {
+    .container {
+        max-width: 600px;
+    }
+}
+
+@include mq($screen-sm) {
+    .container {
+        max-width: 400px;
+    }
+}
+

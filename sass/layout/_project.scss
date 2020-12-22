@@ -1,0 +1,36 @@
+.project {
+    &__inner {
+        display: flex;
+    }
+    &__link {
+        display: block;
+        color: $font-color;
+        text-decoration: none;
+        width: 25%;
+    }
+    &__box {
+        padding: .5rem;
+    }
+    &__name {
+        font-size: 1.25rem;
+        margin-bottom: .5rem;
+        width: 100%;
+        text-align: center;
+    }
+    &__img {
+        transition: filter .6s ease-in-out;
+        filter: grayscale(1);
+    }
+    &__link:hover &__img {
+        filter: grayscale(0);
+    }
+
+    @include mq($screen-md) {
+        &__inner {
+            flex-wrap: wrap;
+        }
+        &__link {
+            width: 50%;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.welcome {
+    &__inner {
+        min-height: calc(100vh - 5rem);
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__img {
+        max-width: 500px;
+    }
+    &__arrow {
+        text-align: center;
+    }
+    &__link {
+        color: $font-color;
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        i {
+            font-size: 4rem;
+            margin: 0 1rem;
+        }
+    }
+
+    @include mq($screen-md) {
+        &__img {
+            max-width: 400px;
+        }
+    }
+    @include mq($screen-sm) {
+        &__img {
+            max-width: 300px;
+        }
+    }
+}
